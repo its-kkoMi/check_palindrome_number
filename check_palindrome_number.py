@@ -3,5 +3,8 @@
 # A palindrome number is a number that is the same after reverse. For example, 545, is the palindrome numbers.
 
 # Ask user for a number
+
+number = int(input("Input a number: "))
+
 # Check if number is a palindrome
 # Print yes or no if number is palindrome
