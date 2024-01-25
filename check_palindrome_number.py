@@ -7,4 +7,22 @@
 number = int(input("Input a number: "))
 
 # Check if number is a palindrome
-# Print yes or no if number is palindrome
+
+def palindrome(number):
+    print("\nOriginal Number:", number)
+    original_number = number
+    
+    # Reverse the number
+    reverse_number = 0
+    while number > 0:
+        remainder = number % 10
+        reverse_number = (reverse_number * 10) + remainder
+        number = number // 10
+    
+    # Print yes or no if number is palindrome    
+    if original_number == reverse_number:
+        print("\nThe given number is a palindrome!")
+    else:
+        print("\nThe given number is not a palindrome!")
+
+palindrome(number)
